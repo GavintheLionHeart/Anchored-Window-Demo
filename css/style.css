@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+#info {
+    color: rgb(33, 32, 29);
+    position: fixed;
+    margin-top: 5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#info h1 {
+    font-size: 2em;
+    font-weight: 500;
+}
