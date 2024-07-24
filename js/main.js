@@ -11,16 +11,6 @@ scene.fog = new THREE.Fog( 0xFFFFFF, 20, 80 );
 const camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 0.1, 1000 );
 camera.position.set( 0, 3, 25 );
 camera.lookAt(0,10,10);
-//CameraHelper
-// const cameraPerspective = new THREE.PerspectiveCamera( 75, 1, 20, 10 );
-
-// const cameraPerspectiveHelper = new THREE.CameraHelper( cameraPerspective );
-// scene.add( cameraPerspectiveHelper );
-
-//Floor
-// const mesh = new THREE.Mesh( new THREE.PlaneGeometry( 100, 100 ), new THREE.MeshPhongMaterial( { color: 0xcbcbcb, depthWrite: false } ) );
-// mesh.rotation.x = - Math.PI / 2;
-// scene.add( mesh );
 
 //Grid
 const grid = new THREE.GridHelper( 200, 100, 0x000000, 0x000000 );
@@ -51,7 +41,10 @@ scene.add(plane1);
 scene.add(plane2);
 scene.add(plane3);
 
+//Origin window position
 plane1.position.set(0, 3, 0);
+
+//New window position
 plane2.position.set(10, 3, 1);
 plane3.position.set(-10, 3, 1);
 
@@ -113,8 +106,6 @@ controls.update();
 
 function animate() {
 
-    // cube.rotation.x += 0.01;
-    // cube.rotation.y += 0.01;
     requestAnimationFrame( animate );
     renderer.render( scene, camera );
 };
