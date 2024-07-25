@@ -10,13 +10,10 @@ body {
     margin-top: 5rem;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 #info h1 {
     font-size: 2em;
     font-weight: 500;
-}
-
-#info p {
-    text-align: center;
 }
