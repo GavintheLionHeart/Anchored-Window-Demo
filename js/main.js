@@ -9,7 +9,7 @@ scene.fog = new THREE.Fog( 0xFFFFFF, 20, 80 );
 
 //Camera
 const camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 0.1, 1000 );
-camera.position.set( 0, 3, 25 );
+camera.position.set( 0, 1, 25 );
 camera.lookAt(0,10,10);
 
 //Grid
@@ -31,7 +31,7 @@ renderer.setAnimationLoop( animate );
 document.body.appendChild( renderer.domElement );
 
 //Windows
-const planeGeometry = new THREE.PlaneGeometry( 12, 8 );
+const planeGeometry = new THREE.PlaneGeometry( 22, 12 );
 const planeMaterial1 = new THREE.MeshBasicMaterial( {color: 0xff0000, side: THREE.DoubleSide} );
 const planeMaterial2 = new THREE.MeshPhongMaterial( {color: 0x0000ff, transparent: true, opacity:0.8, side: THREE.DoubleSide} );
 const plane1 = new THREE.Mesh( planeGeometry, planeMaterial1 );
